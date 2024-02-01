@@ -19,7 +19,11 @@ body {
   background-size: cover;
   position: relative;
 }
-
+@media(max-width:767px){
+  .image-generator{
+    min-height: 50vh;
+  }
+}
 .image-generator::before {
   content: "";
   position: absolute;
@@ -60,6 +64,7 @@ body {
   justify-content: space-between;
   padding: 6px;
   margin: 45px 0 15px;
+  position: relative;
   /* overflow: hidden; */
 }
 
@@ -79,7 +84,13 @@ body {
   height: 100%;
   gap: 15px;
 }
-
+@media(max-width:767px){
+  .generate-form .controls{
+    position: absolute;
+    bottom: -76px;
+    right: 20px;
+  }
+}
 .generate-form .img-quantity {
   outline: none;
   border: none;
